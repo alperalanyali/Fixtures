@@ -10,7 +10,7 @@ const router = express.Router();
 router.route('/').get(pageController.getIndexPage);
 router.route('/about').get(pageController.getAboutPage);
 router.route('/contact').get(pageController.getContactPage);
-router.route('/furnitures',pageController.getFurniture);
+router.route('/furnitures').get(pageController.getFurniture);
 router.route('/login').get(redirectMiddleware,pageController.getLoginPage);
 router.route('/register').get(redirectMiddleware,pageController.getRegisterPage);
 
